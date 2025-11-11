@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}
+	 Failure - GLYSHOP
+{% endblock %}
+
+{% block content %}
+    <div class="flash-error">
+        Order couldn't be completed. Please try again.
+        <a href="{{ url_for('cart') }}">Go back!</a>
+    </div>
+{% endblock %}
